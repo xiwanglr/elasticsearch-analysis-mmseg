@@ -1,4 +1,4 @@
-Mmseg Analysis for ElasticSearch
+Mmseg Analysis for Elasticsearch
 ==================================
 
 The Mmseg Analysis plugin integrates Lucene mmseg4j-analyzer:http://code.google.com/p/mmseg4j/ into elasticsearch, support customized dictionary.
@@ -10,18 +10,15 @@ Versions
 
 Mmseg ver  | ES version
 -----------|-----------
-master | 2.2.x -> master
-1.8.0 | 2.2.0
+master | 2.3.x -> master
+1.9.3 | 2.3.3
+1.8.1 | 2.2.1
 1.7.0 | 2.1.1
-1.6.0 | 2.1.0
 1.5.0 | 2.0.0
 1.4.0 | 1.7.0
 1.3.0 | 1.6.0
-1.2.2 | 1.0.0
 1.2.1 | 0.90.2
-1.2.0 | 0.90.0
 1.1.2 | 0.20.1
-1.1.1 | 0.19.x
 
 
 Package
@@ -43,7 +40,7 @@ Custom Analysis Configuration Example (elasticsearch.yml)
 
 ```
 index:
-  analysis: 
+  analysis:
     analyzer:
       mmseg_maxword:
         type: custom
